@@ -1,5 +1,11 @@
 const ControlledForm = () => {
-  return <div>ControlledForm</div>;
+  return (
+    <div>
+      <h1> Registration Form</h1>
+
+      <form></form>
+    </div>
+  );
 };
 
 export default ControlledForm;
