@@ -1,0 +1,11 @@
+{
+  "extract": [
+    {
+      "name": "cc",
+      "email": "cc@gmail.com",
+      "password": "123",
+      "gender": "male",
+      "id": 1
+    }
+  ]
+}
