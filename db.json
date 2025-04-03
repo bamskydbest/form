@@ -6,6 +6,27 @@
       "password": "123",
       "gender": "male",
       "id": 1
+    },
+    {
+      "name": "Mahmoud",
+      "email": "mahmoudabdulmajeedtaiye@gmail.com",
+      "password": "3232",
+      "gender": "female",
+      "id": 2
+    },
+    {
+      "name": "Bakare Rukayat Omolara",
+      "email": "molara@gmail.com",
+      "password": "323232",
+      "gender": "female",
+      "id": 3
+    },
+    {
+      "name": "sanusi",
+      "email": "sanusi@yahoo.com",
+      "password": "san123",
+      "gender": "male",
+      "id": 4
     }
   ]
 }

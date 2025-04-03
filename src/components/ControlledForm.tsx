@@ -62,57 +62,72 @@ const ControlledForm = () => {
   // }
   //   };
   return (
-    <div>
-      <h1> Registration Form</h1>
+    <div className="m-auto w-[70%] bg-[#F7374F]">
+      <h1 className="text-center font-[cursive] text-[#2C2C2C] text-[2rem]">
+        {" "}
+        Registration Form
+      </h1>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="p-[2rem]">
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" className="block">
+            Name:
+          </label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            className="bg-[#88304E] w-[100%] p-[.5rem] text-[#fff]   "
           />
         </div>
 
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className="block">
+            Email:
+          </label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            className="bg-[#88304E] w-[100%] p-[.5rem] text-[#fff]"
           />
         </div>
 
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" className="block">
+            Password:
+          </label>
           <input
             type="password"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            className="bg-[#88304E] w-[100%] p-[.5rem] text-[#fff]"
           />
         </div>
 
         <div>
-          <label htmlFor="comfirmpassword">Confirm Password:</label>
+          <label htmlFor="comfirmpassword" className="block">
+            Confirm Password:
+          </label>
           <input
             type="password"
             id="confirmpassword"
             value={confirmpassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
+            className="bg-[#88304E] w-[100%] p-[.5rem] text-[#fff]"
           />
         </div>
 
         <div>
           <p>Gender</p>
-          <div className="">
+          <div className="w-[70%] m-auto">
             <label htmlFor="male">Male:</label>
             <input
               type="radio"
@@ -122,9 +137,10 @@ const ControlledForm = () => {
               checked={gender === "male"}
               onChange={(e) => setGender(e.target.value)}
               required
+              // className="bg-[#88304E] block"
             />
 
-            <label htmlFor="male">Female:</label>
+            <label htmlFor="female">Female:</label>
             <input
               type="radio"
               name="gender"
@@ -133,10 +149,15 @@ const ControlledForm = () => {
               checked={gender === "female"}
               onChange={(e) => setGender(e.target.value)}
               required
+              // className="bg-[#88304E] block"
+              className="mr-4"
             />
           </div>
         </div>
-        <button type="submit" className="">
+        <button
+          type="submit"
+          className="bg-[#522546] p-[1rem] block m-auto rounded-md text-[#F7374F] hover:#fff"
+        >
           {loading ? "Submitting" : "Submit"}
         </button>
       </form>
